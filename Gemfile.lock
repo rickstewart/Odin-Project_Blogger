@@ -184,20 +184,20 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  bcrypt
-  byebug
-  coffee-rails (~> 4.1.0)
-  jbuilder (~> 2.0)
-  jquery-rails
-  paperclip
+  bcrypt (= 3.1.10)
+  byebug (= 3.5.1)
+  coffee-rails (= 4.1.0)
+  jbuilder (= 2.2.11)
+  jquery-rails (= 4.0.3)
+  paperclip (= 4.2.1)
   pg
   rails (= 4.2.0)
   rails_12factor
-  sass-rails (~> 5.0)
-  sdoc (~> 0.4.0)
-  sorcery
-  sqlite3
-  tipsy-rails
-  tzinfo-data
-  uglifier (>= 1.3.0)
-  web-console (~> 2.0)
+  sass-rails (= 5.0.1)
+  sdoc (= 0.4.1)
+  sorcery (= 0.9.0)
+  sqlite3 (= 1.3.10)
+  tipsy-rails (= 1.0.5)
+  tzinfo-data (= 1.2015.1)
+  uglifier (= 2.7.1)
+  web-console (= 2.1.1)
