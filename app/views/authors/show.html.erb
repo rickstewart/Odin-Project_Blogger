@@ -10,6 +10,8 @@
   <%= @author.email %>
 </p>
 <% if logged_in? %>
-    <%= link_to 'Edit', edit_author_path(@author) %>
+    <% if @author.email != 'admin@example.com' %>
+        <%= link_to 'Edit', edit_author_path(@author) %>
+    <% end %>
 <% end %>
 <%= link_to 'Back', authors_path %>

@@ -158,6 +158,9 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
+    tipsy-rails (1.0.5)
+      railties (>= 3.0)
+      sass-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     tzinfo-data (1.2015.1)
@@ -186,6 +189,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   sorcery
   sqlite3
+  tipsy-rails
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (~> 2.0)

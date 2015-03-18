@@ -14,3 +14,25 @@
  *= require_self
  *
  */
+#colorText {
+    color: #B00100;
+}
+
+#colorText2 {
+    color: #4b749e;
+}
+
+.emphasize {
+    font-weight: 900;
+    color: #088e6b;
+    padding-right: 16px;
+}
+.space_to_right {
+    padding-right: 10px;
+}
+
+.better_line_separation {
+    line-height: 200%;
+}
+
+

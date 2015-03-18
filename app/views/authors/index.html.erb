@@ -5,8 +5,8 @@
 <table>
   <thead>
   <tr>
-    <th>Username</th>
-    <th>Email</th>
+    <th class="emphasize">Username:</th>
+    <th class="emphasize">Email:</th>
   </tr>
   </thead>
 
@@ -14,12 +14,15 @@
   <% @authors.each do |author| %>
       <tr>
         <td><%= author.username %></td>
-        <td><%= author.email %></td>
-        <td><%= link_to 'Show', author %></td>
+        <td ><%= author.email %></td>
+        <td class="space_to_right"></td>
+        <td class="space_to_right"><%= link_to 'Show', author %></td>
         <br/>
-        <td><%= link_to 'Edit', edit_author_path(author) %></td>
-        <br/>
-        <td><%= link_to 'Destroy', author, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        <% if author.email != 'admin@example.com' %>
+            <td class="space_to_right"><%= link_to 'Edit', edit_author_path(author) %></td>
+            <br/>
+            <td class="space_to_right"><%= link_to 'Destroy', author, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        <% end %>
       </tr>
   <% end %>
   </tbody>
@@ -27,6 +30,7 @@
 
 <br>
 <% if logged_in? %>
-    <%= link_to 'New Author', new_author_path %><br/>
-    <%= link_to "<< Back to Articles List", articles_path %>
+    <%= link_to 'Create New Author', new_author_path, :class => "better_line_separation" %>
+    <br />
+    <%= link_to "<< Back to Articles List", articles_path, :class => "better_line_separation" %>
 <% end %>
